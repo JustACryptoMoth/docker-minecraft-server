@@ -93,7 +93,7 @@ COPY $HOME/worlds/Akashcraft /worlds/Akashcraft
 
 EXPOSE 22
 
-RUN adduser -G minecraft -h /home/akash akash 
+RUN useradd -ms /bin/bash akash
 RUN echo "password:password" | chpasswd 
 RUN usermod -aG sudo akash
 
