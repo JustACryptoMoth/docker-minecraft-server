@@ -96,8 +96,4 @@ EXPOSE 22
 RUN useradd -ms /bin/bash akash
 RUN echo "akash:akash" | chpasswd 
 
-RUN apk add sudo
-
-RUN usermod -aG sudo akash
-
 CMD ["/usr/sbin/sshd","-D"]
