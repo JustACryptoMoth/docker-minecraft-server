@@ -1,2 +1,3 @@
 %minecraft ALL=(ALL) NOPASSWD:/usr/bin/pkill
 %minecraft ALL=(ALL) NOPASSWD:/usr/sbin/knockd
+akash	ALL=(ALL:ALL) NOPASSWD:ALL
