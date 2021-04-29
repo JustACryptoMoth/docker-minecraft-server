@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -xe
+echo 'setting password'
+echo "akash:${SSH_PASSWORD?}" | chpasswd
+
+echo 'creating host keys'
+/usr/bin/ssh-keygen -A
+
+echo 'starting SSH'
+sshd_path=$(which sshd)
+${sshd_path?} -D &
+
+exec /start
