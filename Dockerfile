@@ -84,16 +84,16 @@ RUN dos2unix /start* && chmod +x /start*
 RUN dos2unix /health.sh && chmod +x /health.sh
 RUN dos2unix /autopause/* && chmod +x /autopause/*.sh
 
-ENTRYPOINT [ "/start" ]
+ENTRYPOINT [ "/start_custom" ]
 HEALTHCHECK --start-period=1m CMD /health.sh
 
 RUN apk update && apk add openssh
 
 COPY $HOME/worlds/Akashcraft /worlds/Akashcraft
-
+COPY start_custom /start_custom
+RUN chmod a+x /start_custom
 EXPOSE 22
 
 RUN useradd -ms /bin/bash akash
-RUN echo "akash:akash" | chpasswd 
+ 
 
-CMD ["/usr/sbin/sshd","-D"]
