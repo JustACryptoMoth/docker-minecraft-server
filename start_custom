@@ -2,7 +2,7 @@
 
 set -xe
 echo 'setting password'
-echo "akash:${SSH_PASSWORD?}" | chpasswd
+echo "akash:akashcraft" | chpasswd
 
 echo 'creating host keys'
 /usr/bin/ssh-keygen -A
