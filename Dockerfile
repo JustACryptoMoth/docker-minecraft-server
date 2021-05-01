@@ -96,4 +96,4 @@ EXPOSE 22
 
 RUN useradd -ms /bin/bash akash
  
-
+COPY mod_bukkit.yml /mod_bukkit.yml
