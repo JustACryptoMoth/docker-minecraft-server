@@ -3,6 +3,8 @@
 . ${SCRIPTS:-/}start-utils
 isDebugging && set -x
 
+cp -v /mod_bukkit.yml /data/bukkit.yml
+
 if [ -n "$OPS" ]; then
   log "Updating ops"
   rm -f /data/ops.txt.converted
