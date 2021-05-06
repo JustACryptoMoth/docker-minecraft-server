@@ -97,3 +97,6 @@ EXPOSE 22
 RUN useradd -ms /bin/bash akash
  
 COPY mod_bukkit.yml /mod_bukkit.yml
+COPY mod_paper.yml /mod_paper.yml
+COPY mod_server.properties /mod_server.properties
+COPY mod_spigot.yml /mod_spigot.yml
