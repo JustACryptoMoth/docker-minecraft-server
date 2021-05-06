@@ -8,6 +8,8 @@ cp -v /mod_paper.yml /data/paper.yml
 cp -v /mod_server.properties /data/server.properties
 cp -v /mod_spigot.yml /data/spigot.yml
 
+cp -v -r /mod_plugins /data/plugins
+
 if [ -n "$OPS" ]; then
   log "Updating ops"
   rm -f /data/ops.txt.converted
