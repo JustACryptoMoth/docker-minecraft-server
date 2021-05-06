@@ -1,0 +1,17 @@
+name: JustACryptoMoth
+current: Global
+ignores: ''
+listen: Staff,Global
+mutes: {}
+blockedcommands: ''
+host: false
+party: ''
+filter: true
+notifications: true
+nickname: JustACryptoMoth
+spy: false
+commandspy: false
+rangedspy: false
+messagetoggle: true
+bungeetoggle: true
+date: 2021/May/02 00:04:06

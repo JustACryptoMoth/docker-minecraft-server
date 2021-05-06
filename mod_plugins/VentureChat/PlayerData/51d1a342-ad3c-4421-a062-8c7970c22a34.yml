@@ -1,0 +1,17 @@
+name: JustACryptoFlame
+current: Global
+ignores: ''
+listen: Staff,Global
+mutes: {}
+blockedcommands: ''
+host: false
+party: ''
+filter: true
+notifications: true
+nickname: JustACryptoFlame
+spy: false
+commandspy: false
+rangedspy: false
+messagetoggle: true
+bungeetoggle: true
+date: 2021/May/02 00:58:40
